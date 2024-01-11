@@ -26,6 +26,7 @@ namespace RegisterLoginSystem
             this.user = user;
             userenameLabel.Text = comment.Username;
             commenttxtLabel.Text = comment.CommentText;
+            labeltime.Text = comment.timeStamp.ToString();
         }
         static string myconnstring = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
 

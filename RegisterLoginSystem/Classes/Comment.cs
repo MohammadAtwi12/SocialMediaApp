@@ -35,6 +35,7 @@ namespace RegisterLoginSystem.Classes
             CommentText = Text;
             PostCommentedOnID = postId;
             this.id = id;
+            timeStamp = time;
         }
 
         public bool Insert(Comment c)

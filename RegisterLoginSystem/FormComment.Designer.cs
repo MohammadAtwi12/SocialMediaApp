@@ -28,31 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.commenttxtbox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.commentLabel = new System.Windows.Forms.Label();
             this.buttonComment = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.commenttxtbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // commenttxtbox
-            // 
-            this.commenttxtbox.Location = new System.Drawing.Point(12, 43);
-            this.commenttxtbox.Name = "commenttxtbox";
-            this.commenttxtbox.Size = new System.Drawing.Size(213, 29);
-            this.commenttxtbox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.commenttxtbox.StateCommon.Border.Rounding = 9;
-            this.commenttxtbox.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.commenttxtbox.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.commenttxtbox.StateDisabled.Border.Rounding = 9;
-            this.commenttxtbox.TabIndex = 23;
-            this.commenttxtbox.Tag = "";
             // 
             // commentLabel
             // 
@@ -124,18 +107,29 @@
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
+            // commenttxtbox
+            // 
+            this.commenttxtbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.commenttxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.commenttxtbox.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.commenttxtbox.Location = new System.Drawing.Point(16, 44);
+            this.commenttxtbox.Multiline = true;
+            this.commenttxtbox.Name = "commenttxtbox";
+            this.commenttxtbox.Size = new System.Drawing.Size(209, 28);
+            this.commenttxtbox.TabIndex = 30;
+            // 
             // FormComment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(266, 450);
+            this.Controls.Add(this.commenttxtbox);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.buttonComment);
             this.Controls.Add(this.commentLabel);
-            this.Controls.Add(this.commenttxtbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormComment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -148,12 +142,11 @@
         }
 
         #endregion
-
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox commenttxtbox;
         private System.Windows.Forms.Label commentLabel;
         private System.Windows.Forms.Button buttonComment;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.TextBox commenttxtbox;
     }
 }

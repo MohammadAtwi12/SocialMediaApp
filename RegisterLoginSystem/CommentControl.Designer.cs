@@ -32,6 +32,7 @@
             this.commenttxtLabel = new System.Windows.Forms.Label();
             this.buttonDeleteCom = new System.Windows.Forms.Button();
             this.pictureBoxprof = new System.Windows.Forms.PictureBox();
+            this.labeltime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxprof)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,12 +86,25 @@
             this.pictureBoxprof.TabIndex = 25;
             this.pictureBoxprof.TabStop = false;
             // 
+            // labeltime
+            // 
+            this.labeltime.AutoSize = true;
+            this.labeltime.Font = new System.Drawing.Font("Nirmala UI", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeltime.ForeColor = System.Drawing.Color.DarkGray;
+            this.labeltime.Location = new System.Drawing.Point(101, 7);
+            this.labeltime.MaximumSize = new System.Drawing.Size(320, 21474800);
+            this.labeltime.Name = "labeltime";
+            this.labeltime.Size = new System.Drawing.Size(19, 10);
+            this.labeltime.TabIndex = 26;
+            this.labeltime.Text = "date";
+            // 
             // CommentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.labeltime);
             this.Controls.Add(this.pictureBoxprof);
             this.Controls.Add(this.buttonDeleteCom);
             this.Controls.Add(this.commenttxtLabel);
@@ -111,5 +125,6 @@
         private System.Windows.Forms.Label commenttxtLabel;
         private System.Windows.Forms.Button buttonDeleteCom;
         private System.Windows.Forms.PictureBox pictureBoxprof;
+        private System.Windows.Forms.Label labeltime;
     }
 }
