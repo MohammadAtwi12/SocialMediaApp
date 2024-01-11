@@ -130,10 +130,12 @@ namespace RegisterLoginSystem
                 new FormProfile(user, userenameLabel.Text).Show();
                 FormApp.instance.Dispose();
             }
-            else if (FormProfile.instance != null)
+            else 
             {
+                User usr = user;
+                string txt = userenameLabel.Text;
                 FormProfile.instance.Dispose();
-                new FormProfile(user, userenameLabel.Text).Show();
+                new FormProfile(usr, txt).Show();
             }
         }
     }

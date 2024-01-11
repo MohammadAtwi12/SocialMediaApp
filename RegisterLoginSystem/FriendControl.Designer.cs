@@ -117,7 +117,7 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label2.Location = new System.Drawing.Point(0, 35);
+            this.label2.Location = new System.Drawing.Point(0, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(211, 13);
             this.label2.TabIndex = 34;
@@ -136,7 +136,7 @@
             this.Controls.Add(this.pictureBoxprof);
             this.Controls.Add(this.userenameLabel);
             this.Name = "FriendControl";
-            this.Size = new System.Drawing.Size(217, 48);
+            this.Size = new System.Drawing.Size(217, 55);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxprof)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
