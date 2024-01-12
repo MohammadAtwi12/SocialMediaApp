@@ -65,6 +65,7 @@ namespace RegisterLoginSystem
             {
                 MessageBox.Show("Loged In Successfully");
                 ToApp();
+                
                 Clear();
             }
             else
@@ -76,9 +77,8 @@ namespace RegisterLoginSystem
 
         private void ToApp()
         {
-            this.Close();
-            FormApp formApp = new FormApp(c);
-            formApp.Show();
+            new FormApp(c).Show();
+            this.Hide();
         }
     }
 }

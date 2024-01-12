@@ -16,8 +16,10 @@ namespace RegisterLoginSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            frmRegister RegisterForm = new frmRegister();
-            Application.Run(RegisterForm);
+            FormLogin LoginForm = new FormLogin();
+            Application.Run(LoginForm);
+            //frmRegister RegisterForm = new frmRegister();
+            //Application.Run(RegisterForm);
         }
     }
 }
